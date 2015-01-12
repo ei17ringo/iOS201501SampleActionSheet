@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIActionSheetDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+
+- (IBAction)tapBtn:(id)sender;
 
 @end
 
